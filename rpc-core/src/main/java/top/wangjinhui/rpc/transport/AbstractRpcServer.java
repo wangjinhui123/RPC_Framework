@@ -28,7 +28,7 @@ public abstract class AbstractRpcServer implements RpcService{
     protected ServiceRegistry serviceRegistry;
     protected ServiceProvider serviceProvider;
 
-    public void scanService() {
+    public void scanServices() {
         String mainClassName = ReflectUtil.getStackTrace();
         Class<?> startClass;
         try {

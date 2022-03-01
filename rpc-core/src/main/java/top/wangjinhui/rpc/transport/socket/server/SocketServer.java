@@ -36,7 +36,7 @@ public class SocketServer extends AbstractRpcServer {
         this.serviceRegistry = new NacosServiceRegistry();
         this.serviceProvider = new ServiceProviderImpl();
         this.serializer = CommonSerializer.getByCode(serializer);
-        scanService();
+        scanServices();
     }
 
     @Override
