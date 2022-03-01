@@ -39,7 +39,7 @@ public class RpcResponse<T> implements Serializable {
         return response;
     }
 
-    private static <T> RpcResponse<T> fail(ResponseCode code, String requestId) {
+    public static <T> RpcResponse<T> fail(ResponseCode code, String requestId) {
         RpcResponse<T> response = new RpcResponse<>();
         response.setStatusCode(code.getCode());
         response.setRequestId(requestId);
