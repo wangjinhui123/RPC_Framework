@@ -10,6 +10,7 @@ import top.wangjinhui.rpc.provider.ServiceProvider;
 import top.wangjinhui.rpc.register.ServiceRegistry;
 import top.wangjinhui.rpc.util.ReflectUtil;
 
+import java.net.InetSocketAddress;
 import java.util.Set;
 
 /**
@@ -66,4 +67,11 @@ public abstract class AbstractRpcServer implements RpcService{
             }
         }
     }
+
+    @Override
+    public <T> void publishService(T service, String serviceName) {
+        serviceProvider.addSeriveProvider(service, serviceName);
+        serviceRegistry.register(serviceName, new InetSocketAddress(host, port));
+    }
+
 }
