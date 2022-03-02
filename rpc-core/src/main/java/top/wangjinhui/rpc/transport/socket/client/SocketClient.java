@@ -37,7 +37,7 @@ public class SocketClient implements RpcClient {
 
     private final CommonSerializer serializer;
 
-    public SocketClient() {
+    public SocketClient(Integer kryoSerializer) {
         this(DEFAULT_SERIALIZER, new RandomLoadBalancer());
     }
 

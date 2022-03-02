@@ -12,6 +12,7 @@
         <module>rpc-common</module>
         <module>rpc-api</module>
         <module>rpc-core</module>
+        <module>test-client</module>
     </modules>
 
     <properties>
