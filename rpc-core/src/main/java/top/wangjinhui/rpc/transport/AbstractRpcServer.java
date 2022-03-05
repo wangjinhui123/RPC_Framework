@@ -33,7 +33,7 @@ public abstract class AbstractRpcServer implements RpcService{
         Class<?> startClass;
         try {
             startClass = Class.forName(mainClassName);
-            if (!startClass.isAnnotationPresent(Service.class)) {
+            if (!startClass.isAnnotationPresent(ServiceScan.class)) {
                 logger.error("启动类缺少 @ServiceScan 注解");
                 throw new RpcException(RpcError.SERVICE_SCAN_PACKAGE_NOT_FOUND);
             }

@@ -1,8 +1,5 @@
 package top.wangjinhui.rpc.util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.alibaba.nacos.api.exception.NacosException;
 import com.alibaba.nacos.api.naming.NamingFactory;
 import com.alibaba.nacos.api.naming.NamingService;
@@ -19,9 +16,8 @@ import java.util.List;
 import java.util.Set;
 
 /**
+ * 管理 Nacos 连接等工具类
  * @author Danny
- * @description 管理 nacos 连接的工具包
- * @CreateTime 2022/2/28 16:27
  */
 public class NacosUtil {
 

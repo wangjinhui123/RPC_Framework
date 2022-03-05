@@ -1,5 +1,6 @@
 package top.wangjinhui.test;
 
+import top.wangjinhui.rpc.annotation.ServiceScan;
 import top.wangjinhui.rpc.api.ByeService;
 import top.wangjinhui.rpc.api.HelloObject;
 import top.wangjinhui.rpc.api.HelloService;
@@ -15,6 +16,8 @@ import java.io.ByteArrayOutputStream;
  * @description  测试用Netty消费者
  * @CreateTime 2022/3/2 14:03
  */
+
+@ServiceScan
 public class NettyTestClient {
 
     public static void main(String[] args) {

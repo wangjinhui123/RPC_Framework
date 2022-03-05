@@ -1,5 +1,6 @@
 package top.wangjinhui.test;
 
+import top.wangjinhui.rpc.annotation.ServiceScan;
 import top.wangjinhui.rpc.serializer.CommonSerializer;
 import top.wangjinhui.rpc.transport.RpcService;
 import top.wangjinhui.rpc.transport.socket.server.SocketServer;
@@ -9,6 +10,7 @@ import top.wangjinhui.rpc.transport.socket.server.SocketServer;
  * @description
  * @CreateTime 2022/3/2 14:22
  */
+@ServiceScan
 public class SocketTestServer {
 
     public static void main(String[] args) {

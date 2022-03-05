@@ -1,6 +1,7 @@
 package top.wangjinhui.test;
 
 
+import top.wangjinhui.rpc.annotation.ServiceScan;
 import top.wangjinhui.rpc.api.ByeService;
 import top.wangjinhui.rpc.api.HelloObject;
 import top.wangjinhui.rpc.api.HelloService;
@@ -16,6 +17,8 @@ import java.net.Socket;
  * description 测试用消费者（客户端）
  * @CreateTime 2022/3/2 14:03
  */
+
+@ServiceScan
 public class SocketTestClient {
 
     public static void main(String[] args) {
