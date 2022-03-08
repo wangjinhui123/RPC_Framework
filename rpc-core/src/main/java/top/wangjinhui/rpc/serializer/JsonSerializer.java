@@ -27,7 +27,7 @@ public class JsonSerializer implements CommonSerializer{
             return objectMapper.writeValueAsBytes(obj);
         } catch (JsonProcessingException e) {
             logger.error("序列化时有错误发生:", e);
-            throw new SerializeExpection("序列化时有错误发生");
+            throw new SerializeExpection("序列化时有错误发生!");
         }
     }
 
